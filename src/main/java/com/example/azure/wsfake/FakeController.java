@@ -1,6 +1,7 @@
 package com.example.azure.wsfake;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,7 +13,7 @@ public class FakeController {
     }
 
     @PostMapping("/value/{value}")
-    public Result UpdateValue(String value) {
+    public Result UpdateValue(@PathVariable String value) {
         return new Result(value);
     }
 }
