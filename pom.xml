@@ -51,7 +51,7 @@
                     <resourceGroup>ws-test</resourceGroup>
                     <appName>ws-test-api-from-ci</appName>
                     <region>France Central</region>
-                    <pricingTier>f!</pricingTier>
+                    <pricingTier>F1</pricingTier>
                     <runtime>
                         <os>Windows</os>
                         <javaVersion>jre11</javaVersion>
