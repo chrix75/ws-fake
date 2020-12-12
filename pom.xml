@@ -42,34 +42,6 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-            <plugin>
-                <groupId>com.microsoft.azure</groupId>
-                <artifactId>azure-webapp-maven-plugin</artifactId>
-                <version>1.12.0</version>
-                <configuration>
-                    <schemaVersion>V2</schemaVersion>
-                    <subscriptionId>b358b05b-54f4-41fd-8754-c4a6143aa570</subscriptionId>
-                    <resourceGroup>ws-test</resourceGroup>
-                    <appName>ws-test-api-from-ci</appName>
-                    <pricingTier>F1</pricingTier>
-                    <region>France Central</region>
-                    <runtime>
-                        <os>Linux</os>
-                        <webContainer>Java SE</webContainer>
-                        <javaVersion>Java 11</javaVersion>
-                    </runtime>
-                    <deployment>
-                        <resources>
-                            <resource>
-                                <directory>${project.basedir}/target</directory>
-                                <includes>
-                                    <include>*.jar</include>
-                                </includes>
-                            </resource>
-                        </resources>
-                    </deployment>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
 
