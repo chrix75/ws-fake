@@ -14,6 +14,6 @@ public class FakeController {
 
     @PostMapping("/value/{value}")
     public Result UpdateValue(@PathVariable String value) {
-        return new Result(value);
+        return new Result(value.toUpperCase());
     }
 }
